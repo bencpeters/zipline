@@ -82,7 +82,7 @@ def dump_treasury_curves():
 
     curves = pd.DataFrame(tr_data).T
 
-    datafile = get_datafile('treasury_curves.csv', mode='wb')
+    datafile = get_datafile('treasury_curves.csv', mode='w')
     curves.to_csv(datafile)
     datafile.close()
 
@@ -101,7 +101,7 @@ def dump_benchmarks(symbol):
         benchmark = (daily_return.date, daily_return.returns)
         benchmark_data.append(benchmark)
 
-    datafile = get_datafile(get_benchmark_filename(symbol), mode='wb')
+    datafile = get_datafile(get_benchmark_filename(symbol), mode='w')
     benchmark_returns = pd.Series(dict(benchmark_data))
     benchmark_returns.to_csv(datafile)
     datafile.close()
@@ -115,7 +115,7 @@ def update_benchmarks(symbol, last_date):
 
     Puts source benchmark into zipline.
     """
-    datafile = get_datafile(get_benchmark_filename(symbol), mode='rb')
+    datafile = get_datafile(get_benchmark_filename(symbol), mode='r')
     saved_benchmarks = pd.Series.from_csv(datafile)
     datafile.close()
 
@@ -126,7 +126,7 @@ def update_benchmarks(symbol, last_date):
             benchmark = pd.Series({daily_return.date: daily_return.returns})
             saved_benchmarks.append(benchmark)
 
-        datafile = get_datafile(get_benchmark_filename(symbol), mode='wb')
+        datafile = get_datafile(get_benchmark_filename(symbol), mode='w')
         saved_benchmarks.to_csv(datafile)
         datafile.close()
     except benchmarks.BenchmarkDataNotFoundError as exc:
@@ -149,7 +149,8 @@ Fetching data from Yahoo Finance.
         dump_benchmarks(bm_symbol)
         fp_bm = get_datafile(get_benchmark_filename(bm_symbol), "rb")
 
-    saved_benchmarks = pd.Series.from_csv(fp_bm)
+    print(get_benchmark_filename(bm_symbol))
+    saved_benchmarks = pd.Series.from_csv(fp_bm, encoding='ascii')
     fp_bm.close()
 
     # Find the offset of the last date for which we have trading data in our

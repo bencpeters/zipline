@@ -82,6 +82,8 @@ class iter_to_stream(object):
             size -= len(data)
             if size < 0:
                 data, self.buffered = data[:size], data[size:]
+            if type(data) == bytes:
+                data = data.decode('ascii')
             result += data
         return result
 
