@@ -288,7 +288,7 @@ def get_early_closes(start, end):
         # 4th Friday isn't correct if month starts on Friday, so restrict to
         # day range:
         byweekday=(rrule.FR),
-        bymonthday=range(23, 30),
+        bymonthday=list(range(23, 30)),
         cache=True,
         dtstart=start,
         until=end

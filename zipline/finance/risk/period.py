@@ -128,7 +128,7 @@ class RiskMetricsPeriod(object):
         }
 
         return {k: None if check_entry(k, v) else v
-                for k, v in rval.iteritems()}
+                for k, v in rval.items()}
 
     def __repr__(self):
         statements = []

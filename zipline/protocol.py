@@ -50,7 +50,7 @@ class Event(object):
         delattr(self, name)
 
     def keys(self):
-        return self.__dict__.keys()
+        return list(self.__dict__.keys())
 
     def __eq__(self, other):
         return self.__dict__ == other.__dict__
@@ -164,24 +164,24 @@ class BarData(object):
         del self._data[name]
 
     def __iter__(self):
-        for sid, data in self._data.iteritems():
+        for sid, data in self._data.items():
             if len(data):
                 yield sid
 
     def keys(self):
-        return self._data.keys()
+        return list(self._data.keys())
 
     def iterkeys(self):
-        return self._data.iterkeys()
+        return iter(self._data.keys())
 
     def itervalues(self):
-        return self._data.itervalues()
+        return iter(self._data.values())
 
     def iteritems(self):
-        return self._data.iteritems()
+        return iter(self._data.items())
 
     def items(self):
-        return self._data.items()
+        return list(self._data.items())
 
 
 class DailyReturn(object):
