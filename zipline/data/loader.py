@@ -149,7 +149,6 @@ Fetching data from Yahoo Finance.
         dump_benchmarks(bm_symbol)
         fp_bm = get_datafile(get_benchmark_filename(bm_symbol), "rb")
 
-    print(get_benchmark_filename(bm_symbol))
     saved_benchmarks = pd.Series.from_csv(fp_bm, encoding='ascii')
     fp_bm.close()
 
