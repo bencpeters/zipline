@@ -1,5 +1,8 @@
+zipline Package
+===============
+
 :mod:`zipline` Package
-=======================
+----------------------
 
 .. automodule:: zipline.__init__
     :members:
@@ -7,17 +10,25 @@
     :show-inheritance:
 
 :mod:`algorithm` Module
--------------------------
+-----------------------
 
 .. automodule:: zipline.algorithm
     :members:
     :undoc-members:
     :show-inheritance:
 
-:mod:`sources` Module
+:mod:`errors` Module
+--------------------
+
+.. automodule:: zipline.errors
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+:mod:`protocol` Module
 ----------------------
 
-.. automodule:: zipline.sources
+.. automodule:: zipline.protocol
     :members:
     :undoc-members:
     :show-inheritance:
@@ -46,6 +57,7 @@ Subpackages
     zipline.data
     zipline.finance
     zipline.gens
+    zipline.sources
     zipline.transforms
     zipline.utils
 

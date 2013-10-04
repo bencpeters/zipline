@@ -1,42 +1,42 @@
-data Package
+risk Package
 ============
 
-:mod:`data` Package
+:mod:`risk` Package
 -------------------
 
-.. automodule:: zipline.data
+.. automodule:: zipline.finance.risk
     :members:
     :undoc-members:
     :show-inheritance:
 
-:mod:`benchmarks` Module
+:mod:`cumulative` Module
 ------------------------
 
-.. automodule:: zipline.data.benchmarks
+.. automodule:: zipline.finance.risk.cumulative
     :members:
     :undoc-members:
     :show-inheritance:
 
-:mod:`loader` Module
+:mod:`period` Module
 --------------------
 
-.. automodule:: zipline.data.loader
+.. automodule:: zipline.finance.risk.period
     :members:
     :undoc-members:
     :show-inheritance:
 
-:mod:`loader_utils` Module
---------------------------
+:mod:`report` Module
+--------------------
 
-.. automodule:: zipline.data.loader_utils
+.. automodule:: zipline.finance.risk.report
     :members:
     :undoc-members:
     :show-inheritance:
 
-:mod:`treasuries` Module
-------------------------
+:mod:`risk` Module
+------------------
 
-.. automodule:: zipline.data.treasuries
+.. automodule:: zipline.finance.risk.risk
     :members:
     :undoc-members:
     :show-inheritance:

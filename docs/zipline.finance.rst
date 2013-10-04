@@ -1,37 +1,40 @@
-:mod:`zipline.finance` subpackage
-==================================
+finance Package
+===============
 
-.. automodule:: zipline.finance.__init__
+:mod:`finance` Package
+----------------------
+
+.. automodule:: zipline.finance
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+:mod:`blotter` Module
+---------------------
+
+.. automodule:: zipline.finance.blotter
     :members:
     :undoc-members:
     :show-inheritance:
 
 :mod:`commission` Module
--------------------------
+------------------------
 
 .. automodule:: zipline.finance.commission
     :members:
     :undoc-members:
     :show-inheritance:
 
-:mod:`performance` Module
--------------------------
+:mod:`constants` Module
+-----------------------
 
-.. automodule:: zipline.finance.performance
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-:mod:`risk` Module
-------------------
-
-.. automodule:: zipline.finance.risk
+.. automodule:: zipline.finance.constants
     :members:
     :undoc-members:
     :show-inheritance:
 
 :mod:`slippage` Module
--------------------------
+----------------------
 
 .. automodule:: zipline.finance.slippage
     :members:
@@ -45,4 +48,12 @@
     :members:
     :undoc-members:
     :show-inheritance:
+
+Subpackages
+-----------
+
+.. toctree::
+
+    zipline.finance.performance
+    zipline.finance.risk
 

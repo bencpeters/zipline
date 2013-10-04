@@ -1,7 +1,10 @@
-:mod:`zipline.utils` subpackage
-===============================
+utils Package
+=============
 
-.. automodule:: zipline.utils.__init__
+:mod:`data` Module
+------------------
+
+.. automodule:: zipline.utils.data
     :members:
     :undoc-members:
     :show-inheritance:
@@ -14,7 +17,15 @@
     :undoc-members:
     :show-inheritance:
 
-:mod:`protocol_units` Module
+:mod:`math_utils` Module
+------------------------
+
+.. automodule:: zipline.utils.math_utils
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+:mod:`protocol_utils` Module
 ----------------------------
 
 .. automodule:: zipline.utils.protocol_utils
@@ -23,7 +34,7 @@
     :show-inheritance:
 
 :mod:`simfactory` Module
---------------------------
+------------------------
 
 .. automodule:: zipline.utils.simfactory
     :members:
@@ -39,9 +50,17 @@
     :show-inheritance:
 
 :mod:`tradingcalendar` Module
-------------------------------
+-----------------------------
 
 .. automodule:: zipline.utils.tradingcalendar
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+:mod:`tradingcalendar_lse` Module
+---------------------------------
+
+.. automodule:: zipline.utils.tradingcalendar_lse
     :members:
     :undoc-members:
     :show-inheritance:

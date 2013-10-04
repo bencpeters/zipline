@@ -1,13 +1,8 @@
-:mod:`zipline.gens` subpackage
-==============================
-
-.. automodule:: zipline.gens.__init__
-    :members:
-    :undoc-members:
-    :show-inheritance:
+gens Package
+============
 
 :mod:`composites` Module
--------------------------
+------------------------
 
 .. automodule:: zipline.gens.composites
     :members:
@@ -15,7 +10,7 @@
     :show-inheritance:
 
 :mod:`tradesimulation` Module
-------------------------------
+-----------------------------
 
 .. automodule:: zipline.gens.tradesimulation
     :members:
@@ -23,7 +18,7 @@
     :show-inheritance:
 
 :mod:`utils` Module
----------------------
+-------------------
 
 .. automodule:: zipline.gens.utils
     :members:
