@@ -170,6 +170,17 @@ class TradingEnvironment(object):
 
         return None
 
+    def prev_trading_day(self, test_date):
+        dt = self.normalize_date(test_date)
+        delta = datetime.timedelta(days=-1)
+
+        while dt >= self.first_trading_day:
+            dt += delta
+            if dt in self.trading_days:
+                return dt
+
+        return None
+
     def next_open_and_close(self, start_date):
         """
         Given the start_date, returns the next open and close of
